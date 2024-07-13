@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.5s, transform 0.5s;
+    max-width: 700px;
+    margin: -125px;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.description {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#semester-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.semester-btn {
+    margin: 5px;
+}
+
+.discipline-btn {
+    margin: 5px;
+}
