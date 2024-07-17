@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem2</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="courses.html"><button class="btn">Courses</button></a>
+        <a href="average.html"><button class="btn">Calculating average</button></a>
+        <a href="total.html"><button class="btn">Total S1 & S2</button></a>
+    </div>
+
+    <div class="average-container">
+        <h1>Average in S2</h1>
+            <form id="gradeForm" action="#" method="post">
+                <label for="algebre_grade">Algèbre :</label>
+                <input type="text" id="algebre_grade" name="algebre_grade" min="0" max="20"><br><br>
+                
+                <label for="analyse_grade">Analyse :</label>
+                <input type="text" id="analyse_grade" name="analyse_grade" min="0" max="20"><br><br>
+                
+                <label for="algo_grade">Algorithmique :</label>
+                <input type="text" id="algo_grade" name="algo_grade" min="0" max="20"><br><br>
+                
+                <label for="c_grade">Langage C :</label>
+                <input type="text" id="c_grade" name="c_grade" min="0" max="20"><br><br>
+                
+                <label for="exploi_grade">Systèmes d'Exploitation :</label>
+                <input type="text" id="exploi_grade" name="exploi_grade" min="0" max="20"><br><br>
+                
+                <label for="bd_grade">Base de donnees  :</label>
+                <input type="text" id="bd_grade" name="bd_grade" min="0" max="20"><br><br>
+                
+                <label for="python_grade">python :</label>
+                <input type="text" id="python_grade" name="python_grade" min="0" max="20"><br><br>
+                
+                <label for="techcom_grade">Techniques de Communication :</label>
+                <input type="text" id="techcom_grade" name="techcom_grade" min="0" max="20"><br><br>
+                
+                <label for="anglais_grade">Anglais :</label>
+                <input type="text" id="anglais_grade" name="anglais_grade" min="0" max="20"><br><br>
+                
+                <label for="cp_grade">competences numerique :</label>
+                <input type="text" id="cp_grade" name="cp_grade" min="0" max="20"><br><br>
+        
+                <label for="reseau_grade">reseau :</label>
+                <input type="text" id="reseau_grade" name="reseau_grade" min="0" max="20"><br><br>
+      
+                <input type="submit" value="Result">
+            </form>
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>your average is: <strong id="modalResult"></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
