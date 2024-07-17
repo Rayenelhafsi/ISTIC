@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem2</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="courses.html"><button class="btn">Courses</button></a>
+        <a href="average.html"><button class="btn">Calculating average</button></a>
+        <a href="total.html"><button class="btn">Total S1 & S2</button></a>
+    </div>
+
+    <div class="average-container">
+        <h1>Average in S2</h1>
+            <form id="gradeForm" action="#" method="post">
+                <label for="algebre">Algèbre :</label>
+                <input type="text" id="algebre" name="algebre_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="analyse">Analyse :</label>
+                <input type="text" id="analyse" name="analyse_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="algo">Algorithmique :</label>
+                <input type="text" id="algo" name="algo_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="c">Langage C :</label>
+                <input type="text" id="c" name="c_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="élect">fcts Électronique :</label>
+                <input type="text" id="éléct" name="élect_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="signal">Init trait Signal :</label>
+                <input type="text" id="signal" name="signal_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="exploi">Sys d'exploitation :</label>
+                <input type="text" id="exploi" name="exploi_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="Arch">Arch des ordinateurs :</label>
+                <input type="text" id="Arch" name="Arch" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+
+                <label for="TD">Transmission de données :</label>
+                <input type="text" id="TD" name="TD" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+
+                <label for="anglais">Anglais :</label>
+                <input type="text" id="anglais" name="anglais_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="techcom">Tech.de com :</label>
+                <input type="text" id="techcom" name="techcom_grade" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>
+                
+                <label for="comp">Compétences Numériques :</label>
+                <input type="text" id="comp" name="comp" pattern="\d+(\.\d{1,2})?" title="Please enter a number (up to 2 decimal places)" maxlength="5" required><br><br>        
+        
+                <input type="submit" value="Result">
+            </form>
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>your average is: <strong id="modalResult"></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
