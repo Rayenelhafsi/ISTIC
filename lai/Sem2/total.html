@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Overall Averages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f0f0; /* Light grey background */
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 28px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fefefe;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .result {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overall Averages</h1>
+    
+    <div class="container">
+        <div class="result">
+            <p>Semester 1 Average: <strong id="semester1Average"></strong></p>
+            <p>Semester 2 Average: <strong id="semester2Average"></strong></p>
+            <p>Overall Average: <strong id="overallAverage"></strong></p>
+        </div>
+    </div>
+
+    <script>
+       // Function to calculate averages
+function calculateAverages() {
+    // Retrieve values from localStorage set by semester pages
+    const semester1Average = parseFloat(localStorage.getItem('semester1Average')) || 0;
+    const semester2Average = parseFloat(localStorage.getItem('semester2Average')) || 0;
+    
+    // Calculate overall average
+    const overallAverage = (semester1Average + semester2Average) / 2;
+
+    // Display averages in the HTML
+    document.getElementById('semester1Average').textContent = semester1Average.toFixed(2);
+    document.getElementById('semester2Average').textContent = semester2Average.toFixed(2);
+    document.getElementById('overallAverage').textContent = overallAverage.toFixed(2);
+}
+
+// Call the function when the page loads
+window.onload = calculateAverages;
+
+    </script>
+</body>
+</html>

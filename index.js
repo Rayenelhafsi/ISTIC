@@ -47,4 +47,5 @@ function slideTransition(hidePage, showPage) {
             showPage.classList.remove("hidden");
         }, 50);
     }, 500);
-}
+};
+
