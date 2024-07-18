@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh; 
-  background-image: url('sight/FB_IMG_1714408855405.jpg');/* set the height to 100vh to cover the full screen */
+  background-image: url('sight/1.jpg');/* set the height to 100vh to cover the full screen */
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,37 +28,37 @@ body {
 }
 @keyframes change {
     0%{
-     background-image: url('sight/FB_IMG_1714409002139~2.jpg');
+     background-image: url('sight/23.jpg');
     }
     8%{
-     background-image: url('sight/FB_IMG_1714409225939.jpg');
+     background-image: url('sight/2.jpg');
     }
     16%{
-        background-image: url('sight/FB_IMG_1714409300381.jpg');
+        background-image: url('sight/3.jpg');
        }
     24%{
-        background-image: url('sight/FB_IMG_1714409315229.jpg');
+        background-image: url('sight/4.jpg');
        }
     32%{
-        background-image: url('sight/Messenger_creation_116101b0-bc42-4172-9ca1-878fa9a3b35c.jpeg');
+        background-image: url('sight/5.jpg');
        }
     40%{
-        background-image: url('sight/Messenger_creation_1bcf1118-538a-4874-9698-71dce18a482b.jpeg');
+        background-image: url('sight/6.jpg');
        }
     48%{
-        background-image: url('sight/Messenger_creation_20a9932c-bbca-47d1-b70d-9acddfb279a3.jpeg');
+        background-image: url('sight/7.jpg');
        }
     56%{
-        background-image: url('sight/Messenger_creation_25b1b800-8e81-47c5-ab2c-cb0716f55b5d.jpeg');
+        background-image: url('sight/8.jpg');
        }
     64%{
-        background-image: url('sight/Messenger_creation_297daf3a-e705-4bd8-8200-0a8fa8eae4a1~2.jpeg');
+        background-image: url('sight/9.jpg');
        }
     72%{
-        background-image: url('sight/Messenger_creation_2c3b2f8c-67fb-4a7e-885d-953c059c5801.jpeg');
+        background-image: url('sight/10.jpg');
        }
-    100%{
-        background-image: url('sight/Messenger_creation_531c9574-b251-4d81-812b-535d74ad959b~2.jpeg');
+     100%{
+       background-image: url('sight/11.jpg');
     }
                                  
 }
