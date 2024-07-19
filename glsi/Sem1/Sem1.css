@@ -9,47 +9,54 @@ body{
   align-items: center;
 }
 
-.contain{
-  height: 60%;
+.contain {
+  position: relative;
+  display: inline-block;
   width: 35%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  overflow: hidden;
+  margin: 10px;
 }
-.img{
-  display: block;
+
+.img {
   width: 100%;
-  height: 50%;
-  z-index: -2;
+  height: 200px; /* set a fixed height for the images */
+  object-fit: cover; /* make the images cover the entire container */
+  border-radius: 10px; /* add a border radius for a nicer look */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 h1{
   transition: 0.7s;
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 24px;
   opacity: 0.7;
   color: rgb(255, 255, 255);
+  font-size: 25px;
 }
 p{
   transition: 0.5s;
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 24px;
   margin-bottom: -100%;
   opacity: 0;
+  font-size: 14px;
 }
 strong{
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 14px;
 }
-.overlay{
+.overlay {
+  border-radius: 10px;
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgb(91, 128, 145);
-  height: 50%;
+  height: 99%; /* change from 50% to 100% */
   width: 100%;
   opacity: 0;
   transition: 1.5s;
@@ -65,13 +72,17 @@ strong{
   margin-top:-15px ;
 }
 .contain:hover p{
-  top: 30%;
+  top: 60%;
   opacity: 1;
   color: white;
 }
+.container2{
+  justify-content: center;
+  padding-top: 60px;
+  padding-left: 150px;
+}
 
-
-.container {
+.container1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -107,7 +118,7 @@ strong{
   }
   
   /* Add animation effect when navigating to another page */
-  .container {
+  .container1 {
     animation: fade-in 0.5s ease-in-out;
   }
   
