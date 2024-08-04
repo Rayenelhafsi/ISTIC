@@ -1,14 +1,13 @@
 body{
-  margin: 0px;
+  margin: 100px;
   padding: 0;
   height: 100vh;
   width: 100%;
   font-family: cursive;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 3%;
 }
-
 .contain {
   position: relative;
   display: inline-block;
