@@ -314,4 +314,7 @@ body {
     margin: 0;
     transform: translateY(-100px);
   }
+img{
+    width: 60%;
+}
   
