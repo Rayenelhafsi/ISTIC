@@ -171,7 +171,7 @@ button:hover {
     width: 98%;
     height: 75px; /* adjust the height as needed */
     padding: 10px;
-    background-color: hsla(0, 2%, 42%, 0.151); /* added transparency */
+    background-color: hsla(0, 2%, 42%, 0.3); /* added transparency */
     backdrop-filter: blur(4px); 
     transform: translateY(-8px);
 }
