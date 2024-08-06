@@ -32,6 +32,7 @@ body{
 @media screen and (max-width:600px){
     .about-section1{
         padding: 0;
+        transform: translateY(100px);
     }
     .about-section2{
         padding: 0;
