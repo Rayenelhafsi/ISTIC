@@ -58,7 +58,8 @@ body{
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
-    flex: 1; 
+    flex: 1;
+    background-position-y: 10%; 
 }
 .inner-container1{
     width: 55%;
